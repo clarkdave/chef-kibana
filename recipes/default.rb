@@ -49,6 +49,6 @@ template "#{node['kibana']['installdir']}/current/config.js" do
   user kibana_user
 end
 
-if node['kibana']['webserver'] == 'apache' || node['kibana']['webserver'] == 'nginx'
+if node['kibana']['install_webserver']
   include_recipe "kibana::#{node['kibana']['webserver']}"
 end
