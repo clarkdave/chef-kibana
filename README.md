@@ -19,7 +19,7 @@ As with most cookbooks I write, this one is hopefully flexible enough to be wrap
 
 - `node['kibana']['repo']` - The git repo to use for Kibana3
 - `node['kibana']['branch']` - The sha or branch name to use
-- `node['kibana']['webserver']` - Which webserver to use: apache or nginx. 
+- `node['kibana']['webserver']` - Which webserver to use: apache or nginx
 - `node['kibana']['installdir']` - The directory to checkout into. A `current` symlink will be created in this directory as well.
 - `node['kibana']['es_server']` - The ipaddress or hostname of your elasticsearch server
 - `node['kibana']['es_port']` - The port of your elasticsearch server's http interface
@@ -27,7 +27,7 @@ As with most cookbooks I write, this one is hopefully flexible enough to be wrap
 - `node['kibana']['user']` - The user who will own the files from the git checkout. (default: the web server user)
 - `node['kibana']['config_template']` - The template to use for kibana's `config.js`
 - `node['kibana']['config_cookbook']` - The cookbook that contains said config template
-- `node['kibana']['install_webserver']` - Should this recipe install a webserver? (default true)
+- `node['kibana']['install_webserver']` - Should this recipe install a webserver? (default: true)
 - `node['kibana']['webserver_hostname']` - The primary vhost the web server will use for kibana
 - `node['kibana']['webserver_aliases']` - Array of any secondary hostnames that are valid vhosts
 - `node['kibana']['webserver_listen']` - The ip address the web server will listen on
