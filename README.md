@@ -27,7 +27,7 @@ As with most cookbooks I write, this one is hopefully flexible enough to be wrap
 - `node['kibana']['user']` - The user who will own the files from the git checkout. (default: the web server user)
 - `node['kibana']['config_template']` - The template to use for kibana's `config.js`
 - `node['kibana']['config_cookbook']` - The cookbook that contains said config template
-- `node['kibana']['install_webserver']` - Should this recipe install the webserver specified by `node['kibana']['webserver']`? (default true)
+- `node['kibana']['install_webserver']` - Should this recipe install a webserver? (default true)
 - `node['kibana']['webserver_hostname']` - The primary vhost the web server will use for kibana
 - `node['kibana']['webserver_aliases']` - Array of any secondary hostnames that are valid vhosts
 - `node['kibana']['webserver_listen']` - The ip address the web server will listen on
